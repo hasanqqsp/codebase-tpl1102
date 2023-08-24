@@ -16,4 +16,4 @@ Codebase - Praktikum TPL1102 - Dasar Pemrograman
 
 ## Tips
 
-- Kamu bisa menggunakan terminal / command prompt / powershell langsung di VSCode dengan shortcut (Ctrl + `)
+- Kamu bisa menggunakan terminal / command prompt / powershell langsung di VSCode dengan shortcut ( Ctrl + ` )
