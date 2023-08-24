@@ -17,3 +17,4 @@ Codebase - Praktikum TPL1102 - Dasar Pemrograman
 ## Tips
 
 - Kamu bisa menggunakan terminal / command prompt / powershell langsung di VSCode dengan shortcut (Ctrl + `)
+- Buatlah folder khusus untuk matakuliah ini, folder ini nantinya akan kamu buka sebagai folder project di VSCode
