@@ -16,4 +16,6 @@ Codebase - Praktikum TPL1102 - Dasar Pemrograman
 
 ## Tips
 
-- Kamu bisa menggunakan terminal / command prompt / powershell langsung di VSCode dengan shortcut ( Ctrl + ` )
+- Kamu bisa menggunakan terminal / command prompt / powershell langsung di VSCode dengan shortcut (Ctrl + `)
+- Buatlah folder khusus untuk matakuliah ini, folder ini nantinya akan kamu buka sebagai folder project di VSCode
+- Penamaan file dan folder untuk project pemrogramam python umumnya tidak menggunakan spasi, kamu bisa menggunakan snake_case (memisah kata dengan underscore) atau kebab-case (memisah kata dengan strip). Hal ini akan memudahkan kamu ketika bernavigasi melalui command line / terminal
