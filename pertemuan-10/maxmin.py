@@ -1,20 +1,22 @@
-def maxmin(nums):
-    cur_min = None
-    cur_max = None
+# def max_value (nums):
+#   max_num = nums[0]
 
-    cur_min = nums[1] if cur_min == None or cur_min > nums[1] else cur_min
+#   if len(nums) > 1:
+#     next_max_num = max_value(nums[1:])
+
+#     max_num = next_max_num if next_max_num > max_num else max_num
     
+#   return max_num
 
-def nilai_maksimal (list):
-  nilai_terbesar = list[0]
+# print(max_value([7,9,12,-2,-22,23]))
 
-  if len(list) > 1:
-    # proses rekursif
-    next_nilai_terbesar = nilai_maksimal(list[1:])
+def min_value (nums):
+  min = nums[0]
 
-    if next_nilai_terbesar > nilai_terbesar:
-      nilai_terbesar = next_nilai_terbesar
+  if len(nums) > 1:
+    next_min = min_value(nums[1:])
+    min = next_min if next_min < min else min
 
-  return nilai_terbesar
+  return min
 
-print(nilai_maksimal([7,9,12,-2,-22,23]))
+print(min_value([7,9,12,-2,-22,23]))
