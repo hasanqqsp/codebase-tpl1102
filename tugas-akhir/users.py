@@ -19,16 +19,19 @@ def register(users_list):
             if not (username and full_name and password):
                 print("Tidak boleh ada yang dikosongkan")
                 print("Silakan Ulangi \n")
+                clear()
                 continue
 
             if len(password) < 6:
                 print("Password minimal 6 karakter")
                 print("Silakan Ulangi \n")
+                clear()
                 continue
 
             if (is_username_taken(username,users_list)):
                 print("Username sudah digunakan")
                 print("Silakan Ulangi \n")
+                clear()
                 continue
             ok = True
 

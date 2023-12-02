@@ -149,7 +149,7 @@ def main():
                 
                 if not keyword == '':
                     wishes = [item for item in wishes if (keyword in item[1].lower())]
-                    print("Filtered by keyword : ",keyword)
+                    print("Difilter berdasarkan kata kunci: ",keyword, "(Input 'R' untuk menghapus filter)")
                 wishes = sort_by_key(wishes,sortby)
                 if reverse:
                     wishes.reverse()
@@ -159,10 +159,11 @@ def main():
 
                 if mode == 'w':
                     create_table(headers,this_page,keyword)
-                    if page > total_page and total_page != 0:
-                        page = total_page
-                        continue
-                    print(f"[Halaman {page} dari {total_page}]")
+                    if total_page !=0 :
+                        print(f"[Halaman {page} dari {total_page}]")
+                        if page > total_page and total_page != 0:
+                            page = total_page
+                            continue
                     print_menu()
                     user_input = input()
                     mode = user_input.lower()
@@ -172,18 +173,21 @@ def main():
                     if data:
                         create_wish(authenticated_user[0],data)
                     mode = 'w'
+                    clear()
 
                 elif mode == 'd':
                     id = delete_wish_form(wishes)
                     if id:
                         delete_wish(authenticated_user[0],id)
                     mode = 'w'
+                    clear()
 
                 elif mode == 'e':
                     data = update_wish_form(authenticated_user[0],wishes)
                     if data:
                         update_wish(authenticated_user[0],data["id"],data)
-                    mode = 'w'    
+                    mode = 'w'   
+                    clear() 
 
 
                 elif mode == 'n':
@@ -232,6 +236,10 @@ def main():
                     mode = 'w'
                     clear()
                     print("Pilihan Mode tidak valid")
+    
         
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        sys.exit()
