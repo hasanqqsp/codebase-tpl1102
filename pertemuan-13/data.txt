@@ -1,0 +1,4 @@
+Latihan dasar menangani file di PythonBelajar python di sini ajaYuk belajar codingJago file handling dalam sehariBelajar python di sini aja
+Yuk belajar coding
+Jago file handling dalam sehari
+gunakan with untuk menutup file secara otomatis

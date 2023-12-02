@@ -1,0 +1,5 @@
+data = open('data.txt','a')
+data.write("Belajar python di sini aja\n")
+data.write("Yuk belajar coding\n")
+data.write("Jago file handling dalam sehari\n")
+data.close()
